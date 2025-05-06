@@ -16,6 +16,19 @@ header img {
     margin: 1rem auto;
     display: block;
 }
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+header nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -25,10 +38,18 @@ body {
 main {
     padding: 2rem;
     text-align: left;
+    margin-bottom: 80px;
 }
 main img {
     max-width: 100%;
     height: auto;
+}
+main a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 .button {
     display: block;
