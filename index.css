@@ -7,8 +7,8 @@
     src: url('Gelion.eot?') format('eot'), url('fonts/Gelion-Black.otf') format('opentype'), url('fonts/Gelion-Black.ttf') format('truetype');
   }  
 header {
-    background: #fff;
-    color: #333;
+    background: #333;
+    color: #fff;
     padding: 0;
     text-align: left;
     font-family: 'Gelion-Black', sans-serif;
@@ -20,60 +20,11 @@ header h1 {
     text-align: left;
     position: relative;
 }
-header img {
+.logo {
     width: 200px;
     height: auto;
     margin: 1rem auto;
-    display: block;
-}
-.menu-toggle {
-    background: #fff;
-    color: #333;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    font-family: 'Gelion-Black', sans-serif;
-    cursor: pointer;
-    /*display: none; /* Hidden by default for larger screens */
-}
-nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 0.5rem;
-}
-
-nav a {
-    color: #333;
-    text-emphasis: underline;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: 'gelion-regular', sans-serif;
-    padding: 0.5rem 1rem;
-    position: relative;
-    border-radius: 5px;
-    transition: background 1s ease;
-}
-
-nav.collapsed {
-    display: none; /* Hide the menu when collapsed */
-}
-
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Show the toggle button on smaller screens */
-    }
-    
-    nav {
-        flex-direction: column;
-        background: #fff;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        box-shadow: 0 0px 30px rgba(198, 198, 198, 1);
-    }
 }
 
 body {
@@ -91,8 +42,10 @@ main {
 main img {
     max-width: 100%;
     height: auto;
+    position: flex;
+    float: right;
 }
-main a {
+a {
     color: #333;
     text-emphasis: underline;
     text-decoration: none;
@@ -101,6 +54,42 @@ main a {
     border-radius: 5px;
     transition: background 1s ease;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    margin-left: 20px; /* Space between text and image */
+    flex: 1; /* Allow the image to grow and fill space */
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .image {
+        margin-left: 0; /* Remove left margin on mobile */
+        margin-top: 10px; /* Add some space above the image */
+    }
+}
+
+.text {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
 .launch-btn {
     display: block;
     margin: 1rem auto; /* Centers the launch-btn horizontally */
@@ -115,6 +104,9 @@ main a {
 }
 launch-btn:hover {
     background: #fff;
+}
+.footprint p {
+    margin : 0 auto;;
 }
 footer {
     background: #333;
