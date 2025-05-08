@@ -82,7 +82,8 @@ a {
 }
 
 .text {
-    max-width: 300px;
+    flex: 1;
+    max-width: 600px; /* Limit the width of the text */
     margin: 0 auto;
     padding: 1rem;
     font-size: 1.2rem;
