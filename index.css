@@ -6,46 +6,27 @@
     font-family: 'Gelion-Black';
     src: url('Gelion.eot?') format('eot'), url('fonts/Gelion-Black.otf') format('opentype'), url('fonts/Gelion-Black.ttf') format('truetype');
   }  
-header {
-    background: #333;
-    color: #fff;
-    padding: 0;
-    text-align: left;
-    font-family: 'Gelion-Black', sans-serif;
-}
-header h1 {
-    font-size: 2rem;
+
+  body {
     margin: 0;
-    padding: 1rem;
-    text-align: left;
-    position: relative;
-}
-.logo {
-    width: 200px;
-    height: auto;
-    margin: 1rem auto;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #111;
     display: flex;
-}
+    flex-direction: column;
+    min-height: 100vh;
+  }
 
-body {
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    font-family: "Gelion-Regular", sans-serif;
-}
+  header {
+    padding: 20px;
+    text-align: center;
+  }
 
-main {
-    padding: 2rem;
-    text-align: left;
-    margin-bottom: 80px;
-}
-main img {
-    max-width: 100%;
-    height: auto;
-    position: flex;
-    float: right;
-}
-a {
+  header img {
+    height: 200px;
+  }
+
+  a {
     color: #333;
     text-emphasis: underline;
     text-decoration: none;
@@ -55,66 +36,79 @@ a {
     transition: background 1s ease;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-
-.image {
-    max-width: 100%;
-    height: auto;
-    margin-left: 20px; /* Space between text and image */
-    flex: 1; /* Allow the image to grow and fill space */
-}
-
-/* Media query for mobile devices */
-@media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Align items to the start */
-    }
-
-    .image {
-        margin-left: 0; /* Remove left margin on mobile */
-        margin-top: 10px; /* Add some space above the image */
-    }
-}
-
-.text {
+  .container {
     flex: 1;
-    max-width: 600px; /* Limit the width of the text */
-    margin: 0 auto;
-    padding: 1rem;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    text-align: left;
-}
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
 
-.launch-btn {
-    display: block;
-    margin: 1rem auto; /* Centers the launch-btn horizontally */
-    padding: 0.5rem 1rem;
-    background: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    font-family: 'Gelion-Black', sans-serif;
-    text-align: center;
-}
-launch-btn:hover {
-    background: #fff;
-}
-.footprint p {
-    margin : 0 auto;;
-}
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 0 0;
-    position: fixed;
-    bottom: 0;
+  .text-section {
+    max-width: 400px;
+    padding: 20px;
+    font-family: "Gelion-Regular", sans-serif;
+    font-size: 1.2em;
+  }
+
+  .text-section h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    font-family: "Gelion-Black", sans-serif;
+  }
+
+  .text-section p {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+
+  .video-section {
+    max-width: 560px;
+    padding: 20px;
+  }
+
+  .video-section video, .video-section iframe {
     width: 100%;
-}
+    border-radius: 8px;
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #111;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+  }
+
+  .cta-button:hover {
+    background-color: #333;
+  }
+
+  footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+  }
+
+  footer p {
+    margin: 5px 0;
+    font-family: "Gelion-Regular", sans-serif;
+  }
+
+  .social-icons a {
+    margin: 0 8px;
+    text-decoration: none;
+    color: #111;
+    font-size: 1.2em;
+    filter: grayscale(100%); /* Makes the icons monochromatic */
+    transition: filter 0.3s;
+  }
+
+  .social-icons img:hover {
+  filter: grayscale(0%); /* Restores color on hover */
+}  
