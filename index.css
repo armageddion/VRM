@@ -119,10 +119,11 @@ footer p {
   text-decoration: none;
   color: #111;
   font-size: 1.2em;
-  filter: grayscale(100%); /* Makes the icons monochromatic */
+  filter: grayscale(100%);  /* Makes the icons monochromatic */
   transition: filter 0.3s;
+  visibility: hidden;       /* Initially hidden */
 }
 
 .social-icons img:hover {
-filter: grayscale(0%); /* Restores color on hover */
+filter: grayscale(0%);      /* Restores color on hover */
 }  
