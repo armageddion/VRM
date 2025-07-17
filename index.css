@@ -67,9 +67,18 @@
 
 .text-section h1 {
   font-size: 2em;
-  margin-bottom: 15px;
-  font-family: "Gelion-Black", sans-serif;
-  
+  margin-bottom: 0px;
+  padding-bottom: 1px;
+  margin-top: 0;
+  font-family: "Gelion-Black", sans-serif; 
+}
+
+.subtext {
+  font-size: 1em;
+  color: #919191;
+  margin-top: 10px;
+  font-style: italic;
+  font-family: "Gelion-Regular", sans-serif; 
 }
 
 .text-section p {
